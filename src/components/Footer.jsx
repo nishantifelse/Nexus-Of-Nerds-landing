@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <>
     
-    <footer className='bg-black text-white pb-5 p-15'>
-      <div className='p-4 sm:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+    <footer className='bg-black text-white px-12 py-3'>
+      <div className='p-4 sm:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
 
         {/* Col 1 - Brand */}
         <div>
@@ -92,9 +92,9 @@ const Footer = () => {
 
       </div>
     </footer>
-        <div className='bg-black text-white pb-5'>
+        <div className='bg-black text-white pb-4'>
           <hr />
-        <p className='font-medium text-center mt-5'>@{new Date().getFullYear()} Nexus of Nerds . all right reserved.</p>
+        <p className='font-medium text-center mt-5 text-sm'>@{new Date().getFullYear()} Nexus of Nerds . all right reserved.</p>
         </div>
     </>
   )
