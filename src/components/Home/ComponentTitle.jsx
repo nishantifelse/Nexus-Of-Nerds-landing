@@ -5,7 +5,7 @@ const ComponentTitle = (props) => {
   return (
     <div className='flex items-center justify-center flex-col mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-8 text-center'>
       <div className='flex items-center gap-2 border-2 rounded-2xl bg-white px-3 pl-0'>
-        <RxAvatar className='text-2xl bg-gray-600 rounded-full' />
+        <RxAvatar className='text-xl mx-1 bg-gray-600 rounded-full' />
         <h4 className='text-sm font-medium sm:text-base'>{props.tagLine}</h4>
       </div>
       <h1
