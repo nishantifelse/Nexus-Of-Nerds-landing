@@ -155,7 +155,7 @@ const Home = () => {
       </div>
 
       {/* Services - Built For Builders */}
-      <section id='services' className='bg-[#F8F8F8] w-full p-10 my-5'>
+      <section id='services' className='bg-[#FFFFFF] w-full p-10 my-5'>
         <ComponentTitle
           tagLine="WHO IT'S FOR"
           title="Built For Builders"
@@ -181,7 +181,7 @@ const Home = () => {
       </section>
 
       {/* About */}
-      <section id='about' className='bg-[#F8F8F8] w-full px-2 py-5'>
+      <section id='about' className='bg-[#FFFFFF] w-full px-2 py-5'>
         <ComponentTitle
           tagLine="ABOUT NON"
           title={`We are Building a Better \n Ecosystem Together`}
@@ -202,7 +202,7 @@ const Home = () => {
       </section>
 
       {/* Signup Steps */}
-      <section className='bg-[#F8F8F8] w-full px-2'>
+      <section className='bg-[#FFFFFF] w-full px-2'>
         <ComponentTitle
           tagLine="HOW IT WORKS"
           title="From sign-up to outcome"
@@ -212,7 +212,7 @@ const Home = () => {
       </section>
 
       {/* Pricing */}
-      <section id='pricing' className='bg-[#F8F8F8] w-full px-4 sm:px-8 py-5 my-5'>
+      <section id='pricing' className='bg-[#FFFFF] w-full px-4 sm:px-8 py-5 my-5'>
         <ComponentTitle
           tagLine="Pricing"
           title="Simple, honest pricing"

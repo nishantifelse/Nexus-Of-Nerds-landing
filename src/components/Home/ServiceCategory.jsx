@@ -324,14 +324,14 @@ const ServiceCategory = () => {
 
       {/* Forum & Community */}
       <div
-        className="bg-amber-50 sm:p-6 my-5 rounded-xl overflow-hidden"
+        className="bg-amber-50 sm:p-6 my-5 rounded-3xl overflow-hidden"
         style={{
           boxShadow: `
             0 6px 18px rgba(0,0,0,0.28),
             0 2px 6px rgba(0,0,0,0.18),
             inset 0 2px 6px rgba(0,0,0,0.12),
             inset 0 -2px 5px rgba(0,0,0,0.08)
-          `,
+          `, backgroundColor: '#FFFFFF'
         }}
       >
         <div className="flex justify-between p-4">
@@ -348,59 +348,59 @@ const ServiceCategory = () => {
               Share, Connect & Grow Together
             </h3>
 
-            <p className="font-semibold text-[15px]">
+            <p className="font-semibold text-[14px]" style={{color: '#545454'}}>
               Ask questions, share achievements, discuss ideas, and build
               meaningful connections with engineers, founders, and creators.
             </p>
 
             <div className="flex flex-wrap gap-2 mt-5">
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Share Achievements
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Ask Questions
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 DSA
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Discussions
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Networking
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Real Conversations
               </span>
 
-              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[14px] font-medium">
+              <span className="border-2 rounded-4xl pl-5 py-1 pr-5 text-[12px] font-medium" style={{borderWidth: '1.5px'}}>
                 Post Ideas & Projects
               </span>
             </div>
 
-            <div className="flex flex-wrap gap-5 mt-10">
+            <div className="flex flex-wrap justify-between mt-10">
               <div className="text-center">
-                <h1 className="text-4xl font-semibold">1000+</h1>
-                <p className="mt-2 text-2xl font-medium">
+                <h1 className="text-3xl font-semibold">1000+</h1>
+                <p className="mt-1 text-xl font-medium">
                   Trusted Members
                 </p>
               </div>
 
               <div className="text-center">
-                <h1 className="text-4xl font-semibold">500+</h1>
-                <p className="mt-2 text-2xl font-medium">
+                <h1 className="text-3xl font-semibold">500+</h1>
+                <p className="mt-1 text-xl font-medium">
                   Active Members
                 </p>
               </div>
 
               <div className="text-center">
-                <h1 className="text-4xl font-semibold">70%</h1>
-                <p className="mt-2 text-2xl font-medium">
+                <h1 className="text-3xl font-semibold">70%</h1>
+                <p className="mt-1 text-xl font-medium">
                   Engagement Rate
                 </p>
               </div>

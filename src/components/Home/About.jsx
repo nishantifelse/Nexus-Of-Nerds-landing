@@ -12,7 +12,7 @@ const shadowStyle = {
 
 const About = () => {
   return (
-    <div className='px-4 sm:px-10 lg:px-20 xl:px-30'>
+    <div className='px-4 sm:px-10 lg:px-20 xl:px-30 ' style={{backgroundColor: '#ffffff'}}>
 
       {/* Row 1 */}
       <div className='flex flex-col sm:flex-row gap-3 mt-10'>
