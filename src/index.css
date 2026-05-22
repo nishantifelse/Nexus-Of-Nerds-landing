@@ -20,3 +20,25 @@ body {
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .image-forum{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+.numbers-forum{
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .n-forum{
+        font-size: 20px;
+    }
+    .t-forum{
+        font-size: 10px;
+    }
+    .card-p{
+        padding: 30px;
+    }
+}
+

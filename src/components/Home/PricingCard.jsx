@@ -3,7 +3,7 @@ import { FaCheckCircle, FaLock } from "react-icons/fa";
 
 const PricingCard = (props) => {
   return (
-    <div className='bg-[#2C2B2B] py-6 sm:py-7 px-1 sm:px-5 text-white rounded-3xl w-full flex flex-col'>
+    <div className='card-p bg-[#2C2B2B] py-6 sm:py-7 px-1 sm:px-5 text-white rounded-3xl w-full flex flex-col'>
 
       <h3 className='text-xl sm:text-2xl font-medium'>{props.package}</h3>
       <p className='text-xs sm:text-sm text-gray-300 my-2 leading-relaxed'>{props.desc}</p>
@@ -27,9 +27,9 @@ const PricingCard = (props) => {
             <span>{item}</span>
           </li>
         ))} */}
-        <div className='flex items-center gap-5 text-2xl'>
-          <FaLock className='ml-5'/>
-          <p className='mt-50 relative bottom-25 text-center'> COMING SOON...</p>
+        <div className='flex items-center gap-5 text-2xl justify-center'>
+          <FaLock className='ml-2'/>
+          <p className='mt-52 relative bottom-25 text-center' style={{fontSize: '15px'}}>COMING SOON...</p>
         </div>
       </ul>
 

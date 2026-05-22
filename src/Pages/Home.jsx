@@ -46,7 +46,7 @@ const reviews = [
   },
   {
     name: "Rahul Gupta",
-    role: "Founder",
+    role: "Apiring Founder",
     text: "The roadmap and VC connect features are incredibly useful. Got connected with 3 investors within a month of joining.",
   },
   {
@@ -253,7 +253,7 @@ const Home = () => {
                 </p>
                 <div className='flex items-end gap-1 text-2xl sm:text-3xl font-bold text-gray-800 mt-2 mb-4'>
                   <p className='text-lg sm:text-xl mb-1'>₹</p>
-                  <span>XX9</span>
+                  <span>XX99</span>
                   <span className='text-xs sm:text-sm font-normal text-gray-600 mb-1'>/ Month</span>
                 </div>
                 <button className='w-full bg-[#FCED47] text-black border-none rounded-3xl p-2.5 sm:p-3 my-3 cursor-pointer font-semibold hover:bg-yellow-400 transition-colors text-sm sm:text-base'>
@@ -269,9 +269,9 @@ const Home = () => {
                     </li>
                   ))} */}
 
-                  <div className='flex items-center gap-5 text-2xl'>
-                    <FaLock className='ml-5' />
-                    <p className='mt-50 relative bottom-25 text-center'> COMING SOON...</p>
+                  <div className='flex items-center gap-5 text-2xl justify-center'>
+                    <FaLock className='ml-2'/>
+                    <p className='mt-52 relative bottom-25 text-center' style={{fontSize: '15px'}}>COMING SOON...</p>
                   </div>
                 </ul>
               </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className='bg-white w-full p-1.5 shadow-[10px_16px_30px_rgba(0,0,0,0.1)]' style={{ borderRadius: '50px' }}>
+    <div className='bg-white w-full sm:p-1.5 p-3 shadow-[10px_16px_30px_rgba(0,0,0,0.1)]' style={{ borderRadius: menuOpen ?'30px' : '50px'}}>
       <div className='flex items-center justify-between'>
 
         {/* Left - Logo */}

@@ -383,24 +383,24 @@ const ServiceCategory = () => {
               </span>
             </div>
 
-            <div className="flex flex-wrap justify-between mt-10">
+            <div className="numbers-forum flex flex-wrap justify-between mt-10">
               <div className="text-center">
-                <h1 className="text-3xl font-semibold">1000+</h1>
-                <p className="mt-1 text-xl font-medium">
+                <h1 className="n-forum text-3xl font-semibold">1000+</h1>
+                <p className="t-forum mt-1 text-xl font-medium">
                   Trusted Members
                 </p>
               </div>
 
               <div className="text-center">
-                <h1 className="text-3xl font-semibold">500+</h1>
-                <p className="mt-1 text-xl font-medium">
+                <h1 className="n-forum text-3xl font-semibold">500+</h1>
+                <p className="t-forum mt-1 text-xl font-medium">
                   Active Members
                 </p>
               </div>
 
               <div className="text-center">
-                <h1 className="text-3xl font-semibold">70%</h1>
-                <p className="mt-1 text-xl font-medium">
+                <h1 className="n-forum text-3xl font-semibold">70%</h1>
+                <p className="t-forum mt-1 text-xl font-medium">
                   Engagement Rate
                 </p>
               </div>
@@ -415,7 +415,7 @@ const ServiceCategory = () => {
               overflow: "visible",
             }}
           >
-            <img
+            <img className='image-forum'
               style={{
                 height: "340px",
                 position: "relative",
