@@ -1,5 +1,6 @@
 import React from 'react'
-import { GiSunflower } from "react-icons/gi";
+import { BsClaude, BsRainbow } from 'react-icons/bs';
+// import { GiSunflower } from "react-icons/gi";
 
 const shadowStyle = {
   boxShadow: `
@@ -12,10 +13,10 @@ const shadowStyle = {
 
 const About = () => {
   return (
-    <div className='px-4 sm:px-10 lg:px-20 xl:px-30 ' style={{backgroundColor: '#ffffff'}}>
+    <div className='px-4 sm:px-10 lg:px-20 xl:px-20 ' style={{backgroundColor: '#ffffff'}}>
 
       {/* Row 1 */}
-      <div className='flex flex-col sm:flex-row gap-3 mt-10'>
+      <div className='flex flex-col sm:flex-row gap-2 mt-10'>
 
         {/* Left pill card */}
         <div
@@ -29,7 +30,7 @@ const About = () => {
             ...shadowStyle
           }}
         >
-          <p className='text-white text-left mt-4 ml-5 font-medium text-sm sm:text-base lg:text-xl leading-relaxed'>
+          <p className='text-white text-justify mt-4 ml-5 font-medium text-sm sm:text-base lg:text-xl leading-relaxed'>
             Nexus is an ecosystem — not a course platform. We connect engineers and founders with the mentors, resources, and opportunities that actually move the needle.
           </p>
         </div>
@@ -42,7 +43,8 @@ const About = () => {
             ...shadowStyle
           }}
         >
-          <p className='text-white font-medium text-sm sm:text-base lg:text-xl leading-relaxed'>
+          <p className='text-white font-medium text-sm sm:text-base
+          text-justify lg:text-xl leading-relaxed'>
             We built Nexus because the gap between learning and doing is enormous — and the internet makes it worse by flooding you with content and no direction. What you actually need is access to the right people, a clear path, and real opportunities. That's what we built.
           </p>
         </div>
@@ -50,14 +52,15 @@ const About = () => {
 
       {/* Row 2 */}
       <div className='flex justify-center my-3'>
-        <div className='flex flex-col sm:flex-row gap-2 w-full' style={{ maxWidth: '900px' }}>
+        <div className='flex flex-col sm:flex-row gap-2 w-full' style={{ maxWidth: '950px' }}>
 
           {/* Left rounded card — wider */}
           <div
             className='bg-[#219841] rounded-4xl flex-1 sm:flex-3 text-left'
             style={{ padding: '40px', ...shadowStyle }}
           >
-            <p className='text-[#FCED47] p-3 sm:p-5 font-medium text-sm sm:text-base lg:text-xl leading-relaxed'>
+            <p className='text-[#FCED47] p-2 sm:p-5 font-medium text-sm 
+            text-justify sm:text-base lg:text-xl leading-relaxed'>
               "To help students, professionals, and aspiring entrepreneurs grow by providing the right mentorship, clear roadmaps, practical guidance, and opportunities."
             </p>
           </div>
@@ -75,7 +78,7 @@ const About = () => {
             }}
           >
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#FCED47]'>
-              <span className='flex gap-2 items-center'>Our <GiSunflower className='text-white' /></span>
+              <span className='flex gap-2 items-center'>Our <BsRainbow className='text-white' /></span>
               <span>Mission</span>
             </h1>
           </div>
