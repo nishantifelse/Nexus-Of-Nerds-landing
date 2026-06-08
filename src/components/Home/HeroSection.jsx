@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <Navbar />
                 <div className='my-10 sm:my-14 lg:my-10 flex flex-col items-center text-center'>
 
-                    <p className='bg-white text-black font-medium inline-block py-2 px-6 sm:px-10 rounded-4xl border text-xs sm:text-sm'>
+                    <p className='hero-first-text bg-white text-black font-medium inline-block py-2 px-6 sm:px-10 rounded-4xl border sm:text-sm'>
                         ENGINEERS • ENTREPRENEURS
                     </p>
 
@@ -49,12 +49,12 @@ const HeroSection = () => {
                         </button>
                     </div>
 
-                    <div className='flex items-center justify-center mt-0 sm:mt-16 lg:mt-20 pb-5 flex-wrap gap-2'>
-                        <div className='flex items-center'>
-                            <img className='h-9 w-9 rounded-full object-cover' src={Avatar1} alt="avatar" />
-                            <img className='h-9 w-9 rounded-full object-cover -ml-2' src={Avatar2} alt="avatar" />
-                            <img className='h-9 w-9 rounded-full object-cover -ml-2' src={Avatar3} alt="avatar" />
-                            <img className='h-9 w-9 rounded-full object-cover -ml-2' src={Avatar4} alt="avatar" />
+                    <div className='flex items-center justify-center mt-1 sm:mt-16 lg:mt-18 pb-5 flex-wrap gap-2'>
+                        <div className='avtar-box flex items-center'>
+                            <img className='h-8 w-8 rounded-full object-cover' src={Avatar1} alt="avatar" />
+                            <img className='h-8 w-8 rounded-full object-cover -ml-2' src={Avatar2} alt="avatar" />
+                            <img className='h-8 w-8 rounded-full object-cover -ml-2' src={Avatar3} alt="avatar" />
+                            <img className='h-8 w-8 rounded-full object-cover -ml-2' src={Avatar4} alt="avatar" />
                         </div>
                         <p className='text-xs sm:text-sm text-center'>
                             Joined by 1000+ engineers & founders this month

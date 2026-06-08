@@ -186,6 +186,7 @@ const Home = () => {
           tagLine="ABOUT NON"
           title={`We are Building a Better \n Ecosystem Together`}
           size='70'
+          mobileSize='55'
         />
         <About />
       </section>

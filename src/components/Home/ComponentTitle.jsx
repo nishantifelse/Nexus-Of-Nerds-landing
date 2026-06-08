@@ -1,6 +1,7 @@
 import React from 'react'
 import { RxAvatar } from "react-icons/rx";
 
+
 const ComponentTitle = (props) => {
   return (
     <div className='flex items-center justify-center flex-col mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-8 text-center'>

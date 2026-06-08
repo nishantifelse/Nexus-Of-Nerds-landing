@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect, useState} from 'react'
 import { BsClaude, BsRainbow } from 'react-icons/bs';
 // import { GiSunflower } from "react-icons/gi";
 
@@ -10,6 +10,31 @@ const shadowStyle = {
     0 1px 4px rgba(0,0,0,0.18)
   `
 };
+
+export function useDeviceType() {
+  // Initialize state with current width
+  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  useEffect(() => {
+    // 1. Function to update width state
+    const handleResize = () => setWidth(window.innerWidth);
+
+    // 2. Add event listener on mount
+    window.addEventListener('resize', handleResize);
+
+    // 3. Clean up listener on unmount to prevent memory leaks
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty array ensures this only sets up once on mount
+
+  // Return both the exact pixels and the device classification
+  return {
+    pixels: width,
+    isMobile: width < 768,
+    isDesktop: width >= 768
+  };
+}
+
+
 
 const About = () => {
   return (
@@ -51,7 +76,7 @@ const About = () => {
       </div>
 
       {/* Row 2 */}
-      <div className='flex justify-center my-3'>
+      <div className='flex justify-center my-2'>
         <div className='flex flex-col sm:flex-row gap-2 w-full' style={{ maxWidth: '950px' }}>
 
           {/* Left rounded card — wider */}
@@ -67,8 +92,17 @@ const About = () => {
 
           {/* Right pill card — Our Mission */}
           <div
-            className='bg-[#219841] flex-1 flex items-center justify-center sm:justify-start'
-            style={{
+            className='our-mission-card bg-[#219841] flex-1 flex items-center justify-center sm:justify-start'
+            style={useDeviceType().isMobile ? {
+              borderTopRightRadius: '50px',
+              borderBottomRightRadius: '250px',
+              borderTopLeftRadius: '50px',
+              borderBottomLeftRadius: '250px',
+              padding: 'clamp(1.5rem, 5vw, 3.75rem) clamp(1.75rem, 6vw, 3.75rem)',
+              fontSize: '39px',
+              lineHeight: '1.05',
+              ...shadowStyle
+            } :{
               borderTopRightRadius: '190px',
               borderBottomRightRadius: '190px',
               borderTopLeftRadius: '50px',
@@ -77,7 +111,7 @@ const About = () => {
               ...shadowStyle
             }}
           >
-            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#FCED47]'>
+            <h1 className='sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#FCED47]'>
               <span className='flex gap-2 items-center'>Our <BsRainbow className='text-white' /></span>
               <span>Mission</span>
             </h1>
